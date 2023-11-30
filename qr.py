@@ -110,7 +110,7 @@ def main():
     box_size = int(input("Entrez la taille de la boîte (en pixels) : "))
 
     border_choice = input("Voulez-vous entrer une bordure (O/N) ? : ").lower()
-    if border_choice == 'O' or border_choice == 'o':
+    if border_choice.strip().lower() == 'o':
         border = int(input("Entrez la taille de la bordure autour du QR code : "))
     else:
         border = 1
@@ -118,25 +118,25 @@ def main():
     qr_name = input("Entrez le nom du fichier QR code : ")
 
     box_color_choice = input("Voulez-vous entrer une couleur de boîte (O/N) ? : ").lower()
-    if box_color_choice == 'O' or box_color_choice == 'o':
+    if box_color_choice.strip().lower() == 'o':
         box_color = tuple(map(int, input("Entrez la couleur de la boîte (R G B séparés par des espaces) : ").split()))
     else:
         box_color = (0, 0, 0) 
 
     background_color_choice = input("Voulez-vous entrer une couleur d'arrière-plan (O/N) ? : ").lower()
-    if background_color_choice == 'O' or background_color_choice == 'o':
+    if background_color_choice.strip().lower() == 'o':
         background_color = tuple(map(int, input("Entrez la couleur de l'arrière-plan (R G B séparés par des espaces) : ").split()))
     else:
         background_color = (255, 255, 255)  
 
     version_choice = input("Voulez-vous entrer une version (plus la version est grande plus le qr code sera grand) (O/N) ? : ").lower()
-    if version_choice == 'O' or version_choice == 'o':
+    if version_choice.strip().lower() == 'o':
         version = int(input("Entrez la version du QR code : "))
     else:
         version = 3  
 
     image_choice = input("Voulez-vous ajouter une image au QR code (O/N) ? : ").lower()
-    if image_choice == 'O' or image_choice == 'o':
+    if image_choice.strip().lower() == 'o':
         image = True
         image_path = input("Entrez le chemin de l'image à ajouter : ")
     else:
