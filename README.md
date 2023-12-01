@@ -17,7 +17,7 @@ python -m pip install qrcode[pil] colorama
 
 1. Clonez le dépôt :
    ```bash
-   git clone https://github.com/VotreNom/QR_Code_Maker.git
+   git clone https://github.com/PBrossat/QR_Code_Maker.git
    ```
 2. Déplacez-vous dans le dossier du script :
    ```bash
