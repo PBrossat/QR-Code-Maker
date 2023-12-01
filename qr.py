@@ -161,7 +161,7 @@ def main():
     if version_choice.strip().lower() == 'o':
         version = int(input("Entrez la taille du QR code : "))
     else:
-        version = 3  
+        version = 3 
 
     image_choice = input("Voulez-vous ajouter une image au QR code (O/N) ? : ").lower()
     if image_choice.strip().lower() == 'o':
@@ -169,7 +169,7 @@ def main():
         image_path = input("Entrez le chemin de l'image à ajouter : ")
     else:
         image = False
-        image_path = ""  # Pas de chemin d'image si image est False
+        image_path = ""  # No image path if image is False
 
     create_qr(qr_link, box_size, border, qr_name, box_color, background_color, version, image, image_path)
 
